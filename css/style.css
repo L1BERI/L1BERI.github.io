@@ -1,0 +1,147 @@
+
+body {
+  background: url('images/content/background-video.wembw');
+  background-size: cover;
+  font-family: 'Anton', sans-serif;
+}
+
+.header-site__box {
+  display: block;
+  width: 60vw;
+  height: 10vh;
+  position: relative;
+  left:20vw;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  overflow: hidden;
+  box-shadow: inset 0px -6px 12px 5px #fff;
+ 
+}
+
+.header-site__title {
+  display: inline;
+  color: #fff;
+  position: relative;
+  top:10%;
+  font-size:400%;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+.main-menu__block {
+  width: 25vw;
+  height: 60vh;
+  border:4px solid #fff;
+  /* margin: 15vh auto; */
+  position: relative;
+  left: 38vw;
+  top: 10vh;
+  box-shadow: 0px 0px 10px 5px #fff;
+  overflow: hidden;
+}
+.main-menu__square {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 243, 243, 0.644);
+  position: relative;
+  z-index: -1;
+}
+
+.main-menu__block__buttons {
+  line-height: 290%;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #fff;
+  position: relative;
+  bottom: 100%;
+  font-size: 200%;
+  
+}
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.main-menu__navigation {
+  text-shadow: 5px 6px 1 #000;;
+}
+
+.footer-site__box {
+  width: 60vw;
+  height: 10vh;
+  position: relative;
+  top: 20vh;
+  left:20vw;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  overflow: hidden;
+  box-shadow: inset 0px 6px 12px 5px #fff;
+}
+
+.footer-site__vk {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+
+.vk {
+  position: relative;
+  right: 5%;
+}
+
+
+
+.main-menu__navigation--button:hover {
+  background: #ffffff; /* Цвет фона под ссылкой */ 
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding-left: 8px;
+}
+
+.footer-site__contacts {
+  position: absolute;
+  top:35%;
+  left:25%;
+  font-size: 200%;
+  white-space: pre-wrap;
+ 
+}
+
+.vk:hover {
+  animation: vk-zoom 1s 0s infinite alternate;
+}
+
+@keyframes vk-zoom {
+  0%{
+    transform: scale(1);
+  } 100% {
+    
+    border-radius: 15px;
+    transform: scale(1.2);
+  }
+}
+
+.footer-site__telegram {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  font-size: 150%;
+  transform: scale(1);
+}
+
+.tg {
+  position: relative;
+  right: 5%;
+}
+.footer-site__telegram-text{
+  transform: translate(90px, -45px);
+}

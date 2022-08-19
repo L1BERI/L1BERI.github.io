@@ -5,16 +5,17 @@ body {
 }
 
 .header-site__box {
-  display: block;
-  width: 60vw;
+  display: flex;
+  width: 60%;
   height: 10vh;
-  position: relative;
-  left: 20vw;
+  margin: auto;
   border-bottom: 5px solid #fff;
   border-left: 5px solid #fff;
   border-right: 5px solid #fff;
   overflow: hidden;
   transition: box-shadow 1s 0s;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -23,51 +24,55 @@ body {
 }
 
 .header-site__title {
-  display: inline;
-  color: #fff;
-  position: relative;
-  top: 10%;
   font-size: 400%;
-  text-align: center;
   font-weight: 900;
   letter-spacing: 10px;
+  color: #fff;
+}
+
+.main-menu{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10%;
 }
 
 .main-menu__block {
-  display: flex;
+  
   width: 25vw;
   height: 60vh;
   border: 4px solid #fff;
-  /* margin: 15vh auto; */
-  position: relative;
-  left: 38vw;
-  top: 10vh;
   box-shadow: 0px 0px 10px 5px #fff;
   overflow: hidden;
- justify-content: center;
-
+  align-items: space-between;
 }
 
 .main-menu__square {
-  width: 100%;
-  height: 100%;
+  width: 24.5vw;
+  height: 59.5vh;
+  box-sizing: border-box;
   background-color: rgba(243, 243, 243, 0.644);
   position: absolute;
   z-index: -1;
 }
 
+
 .main-menu__block__buttons {
+  font-size: 180%;
   text-align: center;
   line-height: 250%;
-  font-size: 200%;
+  padding-top: 5%;
+}
+.main-menu__block_buttons:last-child {
+  padding-bottom: 0;
 }
 
 .bgvideo {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 0%;
+  min-height: 0%;
   width: auto;
   height: auto;
   z-index: -9999;
@@ -113,7 +118,7 @@ body {
   /* Цвет фона под ссылкой */
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  padding-left: 12px;
+  padding:0 12px;
 }
 
 .footer-site__contacts {

@@ -1,0 +1,16 @@
+body {
+  background-image: url(../images/content/mirage.jpg);
+}
+
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  width: 60vw;
+  height: 15vh;
+  background-color: aqua;
+  position: relative;
+  justify-content: center;
+}

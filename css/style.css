@@ -8,6 +8,7 @@ body {
   display: flex;
   width: 60%;
   height: 10vh;
+  min-width: 450px;
   margin: auto;
   border-bottom: 5px solid #fff;
   border-left: 5px solid #fff;
@@ -25,6 +26,7 @@ body {
 
 .header-site__title {
   font-size: 400%;
+  min-width: 100%;
   font-weight: 900;
   letter-spacing: 10px;
   color: #fff;
@@ -59,14 +61,25 @@ body {
 
 .main-menu__block__buttons {
   font-size: 180%;
+  color: #fff;
   text-align: center;
   line-height: 250%;
   padding-top: 5%;
+ 
 }
 .main-menu__block_buttons:last-child {
   padding-bottom: 0;
 }
-
+.main-menu__navigation--button {
+  transition: all .7s 0s;
+}
+.main-menu__navigation--button:hover {
+  background: #ffffff;
+  /* Цвет фона под ссылкой */
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding:0 12px;
+}
 .bgvideo {
   position: fixed;
   right: 0;
@@ -113,13 +126,6 @@ body {
 
 
 
-.main-menu__navigation--button:hover {
-  background: #ffffff;
-  /* Цвет фона под ссылкой */
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding:0 12px;
-}
 
 .footer-site__contacts {
   position: absolute;
